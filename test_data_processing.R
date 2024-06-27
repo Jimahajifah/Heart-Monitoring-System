@@ -2,6 +2,7 @@ library(testthat)
 dataset_path <- "C:/Users/User/OneDrive/Documents/KD24203 DMW/Assignment Project/heart_disease_dataset.csv"
 
 #Unit testing
+#This test checks if the data loading and preprocessing function works correctly.
 test_that("Data loading works correctly", {
   heart_disease <- read.csv(dataset_path)
   expect_s3_class(heart_disease, "data.frame")
